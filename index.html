@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaBank</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏦 NovaBank</h1>
+
+<div class="container">
+    <h2>Cuenta</h2>
+    <p id="saldo">Saldo: $0</p>
+
+    <input type="number" id="monto" placeholder="Ingrese monto">
+    <button onclick="depositar()">💰 Depositar</button>
+    <button onclick="retirar()">💸 Retirar</button>
+
+    <div class="log" id="movimientos"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
