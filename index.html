@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CliniPet | Gestión Veterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🐾 CliniPet</h1>
+    <p>Panel inteligente de pacientes veterinarios</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="stat-card">
+      <h3>Total Pacientes</h3>
+      <span id="totalPacientes">0</span>
+    </div>
+
+    <div class="stat-card">
+      <h3>Pacientes Críticos</h3>
+      <span id="criticos">0</span>
+    </div>
+
+    <div class="stat-card">
+      <h3>Edad Promedio</h3>
+      <span id="promedioEdad">0</span>
+    </div>
+
+    <div class="stat-card">
+      <h3>Costo Total</h3>
+      <span id="costoTotal">$0</span>
+    </div>
+  </section>
+
+  <section class="controls">
+    <input type="text" id="busqueda" placeholder="Buscar paciente...">
+
+    <select id="filtroEspecie">
+      <option value="todos">Todas las especies</option>
+      <option value="Perro">Perro</option>
+      <option value="Gato">Gato</option>
+      <option value="Ave">Ave</option>
+    </select>
+
+    <button id="buscarExacto">Buscar exacto</button>
+    <button id="ordenarEdad">Ordenar por edad</button>
+  </section>
+
+  <section id="contenedorMascotas" class="cards"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
